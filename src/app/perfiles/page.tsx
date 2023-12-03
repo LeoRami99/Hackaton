@@ -80,8 +80,8 @@ const Perfiles = () => {
         }
 
         // limiatar a 5 tokens
-        if (listSkillsWithToken.length >= 10) {
-            toast.error("Solo puedes agregar 10 tokens.");
+        if (listSkillsWithToken.length >= 2) {
+            toast.error("Solo puedes agregar 2 tokens.");
             return;
         }
         const newToken = {
@@ -209,18 +209,20 @@ const Perfiles = () => {
             }
             const signer = await provider.getSigner();
             const contract = new ethers.Contract(tokenCamel.address, tokenCamel.abi, signer);
-            const transferFrom = await contract.transferFrom(account, walletTransfer, tokensEnviar.toString());
+            const transferToWallet = await contract.transfer(walletTransfer, web3.utils.toWei(tokensEnviar.toString(), "ether"), { gasLimit: 3000000 });
             // si la transferencia es rechazada
-            if (transferFrom.wait()) {
-                toast.error("No se pudo realizar la transferencia.");
-                return;
-            } else {
+            console.log(await transferToWallet.wait());
+            if (await transferToWallet.wait()) {
                 toast.success("Transferencia realizada.");
-                // setear los valores en 0
                 setWalletTransfer("");
                 setTokensEnviar(0);
+            } else {
+                toast.error("No se pudo realizar la transferencia.");
+                return;
+                // setear los valores en 0
             }
         } catch (error) {
+            console.error("Error al enviar tokens:", error);
             toast.error("No se pudo realizar la transferencia.");
         }
     };
@@ -266,10 +268,17 @@ const Perfiles = () => {
                                                                     <img width="28" height="28" src="https://img.icons8.com/pulsar-color/48/weight-care.png" alt="weight-care" />
                                                                     Obtener Balance
                                                                 </button>
-                                                                {/* <button className="btn btn-primary ml-4" onClick={() => document.getElementById("modal_transation").showModal()}>
+                                                                <button
+                                                                    className="btn btn-primary ml-4"
+                                                                    onClick={() => {
+                                                                        const modalElement = document.getElementById("modal_transation");
+                                                                        if (modalElement instanceof HTMLDialogElement) {
+                                                                            modalElement.showModal();
+                                                                        }
+                                                                    }}>
                                                                     <img width="28" height="28" src="https://img.icons8.com/windows/32/data-in-both-directions.png" alt="data-in-both-directions" />
                                                                     Transferir
-                                                                </button> */}
+                                                                </button>
                                                                 <button className="btn btn-primary ml-4" onClick={mintearTokens}>
                                                                     <img width="28" height="28" src="https://img.icons8.com/fluency/48/golden-fever.png" alt="golden-fever" />
                                                                     Mintear Token
