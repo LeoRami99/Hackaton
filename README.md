@@ -1,6 +1,6 @@
 # CAMEELERS
 
-![Logo del Proyecto](url_del_logo.png)
+![Logo del Proyecto](/images/CameelersIcon.png)
 
 ## Descripción
 
@@ -50,8 +50,8 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
 
 1. **Clona el Repositorio:**
    ```bash
-   git clone https://github.com/tuusuario/AwesomeHack.git
-   cd AwesomeHack
+   git clone https://github.com/LeoRami99/Hackaton.git
+   cd Hackaton
 2. **Instala dependencias :**
     ```bash
    #npm install 
