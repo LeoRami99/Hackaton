@@ -1,0 +1,10 @@
+#card {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+#imagenCard {
+    width: 70%;
+    height: 70%;
+}
