@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import { Banner } from "components/banner";
 import { Card } from "components/card";
 import { Modal } from "components/modal";
 
-const camelsOppotunities () => {
+import React, { useState } from "react";
+import { ModalProps } from '../components/modal';
+
+const camelsOppotunities = () => {
     const [showModal, setShowModal] = useState(false);
     const [modalInfo, setModalInfo] = useState("");
 
@@ -22,7 +24,7 @@ const camelsOppotunities () => {
         <div>
             <Banner />
             <div>
-                <Card onClick={() => handleCardClick("Card 1")} />
+                {cards}
             </div>
             {showModal && <Modal info={modalInfo} onClose={() => setShowModal(false)} />}
         </div>
@@ -30,5 +32,3 @@ const camelsOppotunities () => {
 };
 
 export default camelsOppotunities;
-
-
