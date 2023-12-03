@@ -50,7 +50,7 @@ Proporcionar herramientas que promuevan el desarrollo y cremiento de la web3 ade
 
 ## Logo, tipografia, paleta de Colores
 
-<img src="https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/CameelersIcon.png" alt="imgLogo" width="50%" height="50%" />
+<img src="https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/CameelersIcon.png" alt="imgLogo" width="20%" height="20%" />
 
 
 **Tipografia:**
