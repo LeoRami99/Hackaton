@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+.title-app {
+  background: linear-gradient(90deg, #E04604 0%, #FFCF00 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 100;
+  font-size: 20pt !important;
+}
+.bg-navbar{
+  background-color: rgba(251, 192, 133, 0.729);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}

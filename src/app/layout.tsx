@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AR_One_Sans } from "next/font/google";
 import "./globals.css";
+import "animate.css";
 
 const inter = AR_One_Sans({ subsets: ["latin"] });
 
