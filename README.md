@@ -48,33 +48,7 @@ Nuestro objetivo es [explicacion proposito y el enfoque del proyecto].
 - `#warning` - "#FFCF00"
 - `#error` - "#ff0000"
 
-"success": ,
-
-            "warning": ,
-
-            "error": 
-
-{
-          mytheme: {
-            "primary",
-
-            "secondary": ,
-
-            "accent": "#ffffff",
-
-            "neutral": "#ffffff",
-
-            "base-100": "#ffffff",
-
-            "info": "#ffffff",
-
-            "success": "#86fcbb",
-
-            "warning": "#FFCF00",
-
-            "error": "#ff0000",
-          },
-        },
+![imgPallete]()
 
 ## Guia de instalación
 
