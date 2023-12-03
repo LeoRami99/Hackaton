@@ -50,7 +50,8 @@ Proporcionar herramientas que promuevan el desarrollo y cremiento de la web3 ade
 
 ## Logo, tipografia, paleta de Colores
 
-![Logo del Proyecto](https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/CameelersIcon.png)
+<img src="https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/CameelersIcon.png" alt="imgLogo" width="50%" height="50%" />
+
 
 **Tipografia:**
 - AR One Sans - google fonts
@@ -66,7 +67,6 @@ Proporcionar herramientas que promuevan el desarrollo y cremiento de la web3 ade
 - `#error` - "#ff0000"
 
 ![imgPallete](https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/palletColor.JPG)
-<img src="https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/palletColor.JPG" alt="imgPallete" width="200" height="200" />
 
 ## History
 
