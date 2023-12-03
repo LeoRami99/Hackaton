@@ -97,7 +97,7 @@ const Perfiles = () => {
         if (isConnected && account) {
             if (provider) {
                 try {
-                    const balanceInWei = await provider.getBalance(account.address as string);
+                    const balanceInWei = await provider.getBalance(account as string);
 
                     // convertir a eth con web3
                     const balanceInEth = web3.utils.fromWei(balanceInWei.toString(), "ether");
