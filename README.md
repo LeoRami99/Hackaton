@@ -48,7 +48,7 @@ Nuestro objetivo es [explicacion proposito y el enfoque del proyecto].
 - `#warning` - "#FFCF00"
 - `#error` - "#ff0000"
 
-![imgPallete]()
+![imgPallete](https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/palletColor.JPG)
 
 ## Guia de instalación
 
