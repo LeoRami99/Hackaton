@@ -2,10 +2,23 @@
 
 ![Logo del Proyecto](https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/CameelersIcon.png)
 
+Future is on blockchain, you will be a real cameleer!! 
+El futuro está en la blockchain, así serás un auténtico camellador!!
+
 ## Descripción
 
-Bienvenido a **Cammelers**, un proyecto que aborda...
-Nuestro objetivo es [explicacion proposito y el enfoque del proyecto].
+Bienvenido a **Cammelers**, un proyecto que busca conectar talento con oportunidades que transformen y ayuden en la adaptacion de web3 y la industria 4.0.
+Nuestro objetivo es hacer un match completo en cuanto desarrollos y el talento adecuado para llevarlos a cabo, teniendo la certeza de que sus conocimientos y habilidades tecnicas son verificadas en la blockchain, haciendolo parte integral del proceso de selección y conformación de equipos; dando una capa extra de seguridad ya que la informacion subida no puede alterada y garantizando la integridad y confiabilidad de la misma. 
+
+Esta información al ser decentralizada permite la verificacion en tiempo real y la transparencia en los procesos de selección, los empleadores pueden confiar en que recibiran postulaciones de candidatos que cumplen con los conocimientos y habilidades al tener respaldo de registros inmutables.
+
+## Objetivo
+
+Hacer posible la adopcion masiva de verificación de conocimiento mediante tokens esclusivos de nuestros aliados(universidades, plataformas de aprendizaje, workshops, hackaton, etc) 
+
+## Mision
+
+Proporcionar herramientas que promuevan el desarrollo y cremiento de la web3 además de ser un puente entre desarrolladores y empleadores
 
 ## Resumen
 
@@ -35,9 +48,13 @@ Nuestro objetivo es [explicacion proposito y el enfoque del proyecto].
     user discord: 
     correo: dannuver@gmail.com
 
-## Logo y Paleta de Colores
+## Logo, tipografia, paleta de Colores
 
 ![Logo del Proyecto](https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/CameelersIcon.png)
+
+**Tipografia:**
+- AR One Sans - google fonts
+![link](https://fonts.google.com/specimen/AR+One+Sans)
 
 **Paleta de Colores:**
 
@@ -49,6 +66,27 @@ Nuestro objetivo es [explicacion proposito y el enfoque del proyecto].
 - `#error` - "#ff0000"
 
 ![imgPallete](https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/palletColor.JPG)
+<img src="https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/palletColor.JPG" alt="imgPallete" width="200" height="200" />
+
+## History
+
+**Inspiration**
+Interés en el desarrollo web3, desempleo y conocimiento que no es posible validar. viendo en la blockchain una oportunidad verificación confiable debido a la decentralización.
+
+**Lo que hace**
+Conexión de talento con oportunidades (proyectos) reales en web3 y la industria 4.0 logrando un ecosistema en el que los desarrolladores trabajen en proyectos acorde a sus habilidades verificadas y brindando transparencia y confianza de las partes involucradas.
+
+**Desafíos con los que nos encontramos**
+- Adopción masiva de verificación de conocimientos debido a las conexiones y colaboraciones que deben ser solidas.
+- Capacitación y educación de la comunidad 
+
+**Logros de los que estamos orgullosos**
+Estamos orgullosos de desarrollar soluciones por y para desarrolladores web3 y contribuir positivamente a la comunidad, promoviendo el conocimiento, la validación y permitiendo disminuir el desempleo
+
+**¿Qué sigue para los cameelers?**
+- Desarrollo continuo, debido a que es un proyecto escalable que puede tener muchos mas nodos que impacten ecológicamente y que apoyen causas sociales y o fundaciones.
+- Inspirar a mas personas en nuestra visión de proyecto, su escalabilidad y valor para colaborar activamente 
+- Educación continua de los diferentes nodos y complementos del desarrollo
 
 ## Guia de instalación
 
