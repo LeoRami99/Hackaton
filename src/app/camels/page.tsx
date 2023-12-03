@@ -5,7 +5,7 @@ import { Card } from "components/card";
 import { Modal } from "components/modal";
 
 import React, { useState } from "react";
-import { ModalProps } from '../components/modal';
+import { ModalProps } from "../components/modal";
 
 const camelsOppotunities = () => {
     const [showModal, setShowModal] = useState(false);
@@ -15,17 +15,13 @@ const camelsOppotunities = () => {
         setModalInfo(info);
         setShowModal(true);
     };
-    
-    const cards = Card.map((Card) => (
-        <Card key={Card.id} onClick={() => handleCardClick(Card.info)} />
-    ));
-    
+
+    const cards = Card.map((Card) => <Card key={Card.id} onClick={() => handleCardClick(Card.info)} />);
+
     return (
         <div>
             <Banner />
-            <div>
-                {cards}
-            </div>
+            <div>{cards}</div>
             {showModal && <Modal info={modalInfo} onClose={() => setShowModal(false)} />}
         </div>
     );
