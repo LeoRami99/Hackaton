@@ -57,7 +57,14 @@ const Card = () => {
                 <h2 className="card-title">{card.title}</h2>
                 <p>{card.description}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary" onClick={() => document.getElementById(`my_modal_${index}`).showModal()}>
+                    <button
+                        className="btn btn-primary"
+                        onClick={() => {
+                            const modalElement = document.getElementById(`my_modal_${index}`);
+                            if (modalElement instanceof HTMLDialogElement) {
+                                modalElement.showModal();
+                            }
+                        }}>
                         Ver más
                     </button>
                     {/* <button className="btn btn-primary" onClick={this.openModal}>Ver más</button> */}

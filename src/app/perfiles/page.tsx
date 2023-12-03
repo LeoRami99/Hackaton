@@ -13,7 +13,7 @@ import tokenCamel from "../assets_contracts/json/3_cameltoken.json";
 
 // the state is for select the type of user
 
-const register = () => {
+const Perfiles = () => {
     // transferencia de tokens a otro wallet
     const [walletTransfer, setWalletTransfer] = useState("");
     const [tokensEnviar, setTokensEnviar] = useState(0); // tokens to send
@@ -25,7 +25,7 @@ const register = () => {
     const [balanceUser, setBalanceUser] = useState(0);
     const [userTokens, setUserTokens] = useState(""); // tokens of user
 
-    const [listSkillsWithToken, setListSkillsWithToken] = useState([]); // list of skills with token
+    const [listSkillsWithToken, setListSkillsWithToken]: any = useState([]); // list of skills with token
     const [tokenName, setTokenName] = useState("");
     const [tokenAddress, setTokenAddress] = useState("");
 
@@ -37,7 +37,7 @@ const register = () => {
     const [errorWallet, setErrorWallet] = useState(false);
 
     // Declarations for useStates
-    const [skill, setSkills] = useState({});
+    // const [skill, setSkills] = useState({});
     const [walletUser, setWalletUser] = useState("");
     const [typeUser, setTypeUser] = useState(0);
     // Declarations for useStates company
@@ -97,10 +97,10 @@ const register = () => {
         if (isConnected && account) {
             if (provider) {
                 try {
-                    const balanceInWei = await provider.getBalance(account);
+                    const balanceInWei = await provider.getBalance(account.address as string);
 
                     // convertir a eth con web3
-                    const balanceInEth = web3.utils.fromWei(balanceInWei, "ether");
+                    const balanceInEth = web3.utils.fromWei(balanceInWei.toString(), "ether");
 
                     const nameOfNetwork = await provider.getNetwork();
 
@@ -108,7 +108,7 @@ const register = () => {
 
                     toast.success(`Su balance es: ${balanceInEth}`);
 
-                    setBalanceUser(balanceInWei);
+                    setBalanceUser(Number(balanceInWei));
                 } catch (error) {
                     console.error("Error al obtener el balance:", error);
                     toast.error("Error al obtener el balance.");
@@ -440,4 +440,4 @@ const register = () => {
     );
 };
 
-export default register;
+export default Perfiles;
