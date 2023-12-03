@@ -17,7 +17,7 @@ const useMetaMaskConnection = () => {
     const [provider, setProvider] = useState<ethers.BrowserProvider | null>(null); // import { ethers } from "ethers";
 
     const connectToMetaMask = useCallback(async () => {
-        const { ethereum } = window;
+        const { ethereum } = window as unknown as Window & { ethereum: any };
         setLoading(true);
 
         if (!ethereum) {
@@ -35,7 +35,7 @@ const useMetaMaskConnection = () => {
             toast.success(`Conectado a MetaMask en la dirección: ${address}`);
             setIsConnected(true);
             setAccount(address);
-        } catch (error) {
+        } catch (error: any) {
             console.error("Error al conectar con MetaMask:", error);
             toast.error(`Error al conectar con MetaMask: ${error.message}`);
             setIsConnected(false);

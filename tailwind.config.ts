@@ -6,15 +6,6 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  // theme: {
-  //   extend: {
-  //     backgroundImage: {
-  //       'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-  //       'gradient-conic':
-  //         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-  //     },
-  //   },
-  // },
   plugins: [require("daisyui")],
    daisyui: {
       themes: [
@@ -32,7 +23,7 @@ const config: Config = {
                       
             "info": "#ffffff",
                       
-            "success": "#86fcbb",
+            "success": "#55E038",
                       
             "warning": "#FFCF00",
                       
