@@ -1,6 +1,6 @@
 # CAMEELERS
 
-![Logo del Proyecto](/images/CameelersIcon.png)
+![Logo del Proyecto](https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/CameelersIcon.png)
 
 ## Descripción
 
@@ -37,12 +37,44 @@ Nuestro objetivo es [explicacion proposito y el enfoque del proyecto].
 
 ## Logo y Paleta de Colores
 
-![Logo del Proyecto](url_del_logo.png)
+![Logo del Proyecto](https://github.com/Aguevarab0729/Hackaton/blob/main/public/images/CameelersIcon.png)
 
 **Paleta de Colores:**
-- `#color1` - Descripción del color
-- `#color2` - Descripción del color
-- `#color3` - Descripción del color
+
+- `#primary` - "#DDA060"
+- `#secondary` - "#F0B50E"
+- `#accent` - "#ffffff"
+- `#sucess` - "#86fcbb"
+- `#warning` - "#FFCF00"
+- `#error` - "#ff0000"
+
+"success": ,
+
+            "warning": ,
+
+            "error": 
+
+{
+          mytheme: {
+            "primary",
+
+            "secondary": ,
+
+            "accent": "#ffffff",
+
+            "neutral": "#ffffff",
+
+            "base-100": "#ffffff",
+
+            "info": "#ffffff",
+
+            "success": "#86fcbb",
+
+            "warning": "#FFCF00",
+
+            "error": "#ff0000",
+          },
+        },
 
 ## Guia de instalación
 
